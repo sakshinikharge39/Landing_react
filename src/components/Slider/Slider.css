@@ -1,0 +1,56 @@
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 30px;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 200px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-button {
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #333;
+    font-size: 20px;
+    padding: 5px 10px;
+    margin-top: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-button:hover {
+    background-color: rgba(145, 128, 128, 0.8);
+}
+
+.card-button.right {
+    right: 0;
+    z-index: 1;
+}
